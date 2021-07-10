@@ -166,7 +166,7 @@
       width: 80px;
       height: 80px;
       z-index: 1;
-      background-image: url(../src/ellipse.svg); }
+      background-image: url(./src/ellipse.svg); }
     .main .side-bar__player__info .info-ration {
       font-size: 30px;
       padding: 8px 0;
@@ -363,7 +363,7 @@
         padding-left: 10px;
         position: relative; }
         .content__table__head__item:not(:first-child)::before {
-          content: url(../src/sort.svg);
+          content: url(./src/sort.svg);
           position: absolute;
           left: 0;
           bottom: 4px; }
