@@ -144,7 +144,7 @@
                 width: 80px;
                 height: 80px;
                 z-index: 1;
-                background-image: url(./src/ellipse.svg);
+                background-image: url(../src/ellipse.svg);
             }
 
             &__info {
@@ -167,7 +167,7 @@
                             position: absolute;
                             top: 4px;
                             right: 2px;
-                            background-image: url(../../src/ratio_up.svg);
+                            background-image: url(../src/ratio_up.svg);
                             width: 12px;
                             height: 12px;
                         }
