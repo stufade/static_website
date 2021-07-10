@@ -1,0 +1,13 @@
+// Использовать на ::before или ::after и иметь z-index >= 0 на родителе элемента 
+@mixin main-border {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(143.66deg, #6171FF -9.12%, rgba(90, 96, 231, 0) 40.43%),
+        linear-gradient(120.87deg, rgba(97, 113, 255, 0) 70.49%, #6171FF 90.53%);
+    border-radius: 10px;
+    z-index: -1;
+}

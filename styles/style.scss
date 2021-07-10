@@ -1,0 +1,39 @@
+@import 'scss/header';
+@import 'scss/side-bar';
+@import 'scss/content';
+@import 'scss/format';
+@import 'scss/table';
+@import 'scss/footer';
+
+@import 'scss/variables/main-bg-color';
+@import 'scss/mixins/center-1440px';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+body {
+    background-color: $main-bg-color;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 110%;
+}
+
+.container {
+    @include center-1440px
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+}

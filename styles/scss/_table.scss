@@ -1,0 +1,66 @@
+@import 'variables/main-bg-color';
+@import 'mixins/main-shadow';
+@import 'variables/purple-color';
+
+.content__table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 20px;
+    @include main-shadow;
+
+    &__head {
+        color: #909090;
+        background-color: #ffffff;
+        border-bottom: 1px solid #D6D7F9;
+        
+        font-size: 12px;
+        font-weight: 300;
+        
+        &__item {
+            padding: 22px 0 5px 20px;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                padding-left: 10px;
+                position: relative;
+
+                &::before {
+                    content: url(../../src/sort.svg);
+                    position: absolute;
+                    left: 0;
+                    bottom: 4px;
+                }
+            }
+
+        }
+    }
+
+    &__body {
+
+        &__row {
+
+            &:nth-child(odd) {
+                background-color: $main-bg-color;
+            }
+
+            &:nth-child(even) {
+                background-color: #fff;
+            }
+
+            &__item {
+                padding: 21px 0px 21px 20px;
+
+                &:not(:first-child) {
+                    padding-left: 10px;
+                }
+
+                &:last-child {
+                    color: $purple-color;
+                    font-weight: 1000;
+                }
+            }
+        }
+    }
+}

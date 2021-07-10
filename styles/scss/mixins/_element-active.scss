@@ -1,0 +1,6 @@
+@import '../variables/purple-color';
+
+@mixin element-active {
+    color: $purple-color;
+    background-color: #EFEFFD;
+}

@@ -1,0 +1,103 @@
+@import 'mixins/flex-vertical-center';
+@import 'mixins/main-shadow';
+@import 'mixins/center-1440px';
+@import 'variables/main-bg-color';
+@import 'variables/purple-color';
+
+.header {
+    @include main-shadow;
+
+    .container {
+        @include flex-vertical-center;
+        gap: 50px;
+        height: 80px;
+    }
+
+    &__second-section {
+        @include flex-vertical-center;
+        justify-content: space-between;
+        flex-basis: 300px;
+
+        &__link {
+            margin-right: 15px;
+
+            &:first-child {
+                @include flex-vertical-center;
+                margin-right: 40px;
+                padding: 8px 5px 8px 10px;
+                background: #FFFFFF;
+                border-radius: 5px;
+
+                .ball {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    &__link__text {
+        position: absolute;
+        right: -5px;
+        bottom: 1px;
+        color: #fff;
+        background-color: #86E3CE;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    &__avatar {
+        border-radius: 100%;
+        padding: 2px;
+        width: 40px;
+        border: 2px solid $purple-color;
+    }
+
+    &__logo {
+        @include flex-vertical-center;
+        flex-basis: 295px;
+
+        .logo__text {
+            margin-left: 19px;
+        }
+    }
+
+    &__nav {
+        @include flex-vertical-center;
+        justify-content: space-between;
+        flex: 1 1;
+
+        .link {
+            @include flex-vertical-center;
+
+            color: #000;
+            text-decoration: none;
+
+            transition: color 0.25s;
+
+            &:hover {
+                color: $purple-color;
+            }
+
+            img {
+                margin-left: 15px;
+            }
+        }
+
+        .nav__list {
+            list-style: none;
+            display: flex;
+            min-width: 500px;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .header__second-section__link:first-child {
+        margin: 0 15px;
+    }
+}

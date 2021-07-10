@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Static</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="src/logo.svg" alt="logo" class="logo__image">
+                <img src="src/logo_text.svg" alt="text" class="logo__text">
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__list__item"><a class="link" href="#">Расписание</a></li>
+                    <li class="nav__list__item"><a class="link" href="#">Игровые отчёты</a></li>
+                    <li class="nav__list__item"><a class="link" href="#">Статистика</a></li>
+                    <li class="nav__list__item"><a class="link" href="#">Ещё <img src="src/arrow_down.svg"
+                                alt="arrow"></a>
+                    </li>
+                </ul>
+                <div class="header__second-section">
+                    <a href="#" class="header__second-section__link">
+                        <img src="src/ball.svg" alt="ball" class="ball">
+                        <img src="src/arrow_down.svg" alt="arrow">
+                    </a>
+                    <a href="#" class="header__second-section__link">
+                        <img src="src/ava-small.jpg" alt="avatar" class="header__avatar">
+                    </a>
+                    <a href="#" class="relative header__second-section__link">
+                        <img src="src/bag.svg" alt="bag">
+                        <span class="header__link__text">1</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="side-bar">
+
+                <div class="side-bar__player">
+                    <div class="ava-wrapper">
+                        <img src="src/ava-medium.jpg" class="side-bar__player__ava" alt="avatar">
+                    </div>
+                    <div class="side-bar__player__info">
+                        <div class="info-ration">
+                            89.40 <span class="ratio">999</span>
+                        </div>
+                        <div class="info-name">
+                            Елишакашвили Михо
+                        </div>
+                    </div>
+                    <div class="side-bar__player__edit">
+                        <img src="src/edit.svg" alt="edit">
+                        <div class="side-bar__player__edit__text">
+                            Редактировать
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-bar__menu">
+                    <ul class="side-bar__menu__list">
+                        <li class="side-bar__menu__list__item">
+                            <a class="side-bar__link stats stats_active">
+                                <img src="src/user.svg" alt="user">
+                                <span class="side-bar__link__text">Статистика</span>
+                                <img src="src/arrow_down.svg" class="arrow">
+                            </a>
+                            <ul class="stats-ul stats-ul_active">
+                                <li class="stats-ul__item">
+                                    <a href="#">Футбол</a>
+                                </li>
+                                <li class="stats-ul__item">
+                                    <a href="#">Баскетбол</a>
+                                </li>
+                                <li class="stats-ul__item">
+                                    <a href="#">Волейбол</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="side-bar__menu__list__item">
+                            <a href="#" class="side-bar__link">
+                                <img src="src/calendar.svg" alt="user">
+                                <span class="side-bar__link__text">Ближайшие игры</span>
+                            </a>
+                        </li>
+                        <li class="side-bar__menu__list__item">
+                            <a href="#" class="side-bar__link">
+                                <img src="src/report.svg" alt="user">
+                                <span class="side-bar__link__text">Игровые отчёты</span>
+                            </a>
+                        </li>
+                        <li class="side-bar__menu__list__item">
+                            <a href="#" class="side-bar__link">
+                                <img src="src/history.svg" alt="user">
+                                <span class="side-bar__link__text">История заказов</span>
+                            </a>
+                        </li>
+                        <li class="side-bar__menu__list__item">
+                            <a href="#" class="side-bar__link">
+                                <img src="src/log_out.svg" alt="user">
+                                <span class="side-bar__link__text">Выйти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="content">
+
+                    <div class="content__achivements">
+                        <div class="content__achivements__above">
+                            <div class="complited">
+                                <div class="complited__item">
+                                    <img src="src/achive.png" alt="achive">
+                                    <span class="complited__item__text">5</span>
+                                </div>
+                                <div class="complited__item">
+                                    <img src="src/achive.png" alt="achive">
+                                    <span class="complited__item__text">5</span>
+                                </div>
+                                <div class="complited__item">
+                                    <img src="src/achive.png" alt="achive">
+                                    <span class="complited__item__text">99</span>
+                                </div>
+                            </div>
+                            <div class="not-complited">
+                                <img src="src/achive_locked.png" alt="locked achive">
+                                <img src="src/achive_locked.png" alt="locked achive">
+                            </div>
+                        </div>
+                        <div class="content__achivements__below">
+                            <img src="src/achive.png" alt="achive">
+                            <img src="src/achive.png" alt="achive">
+                            <img src="src/achive.png" alt="achive">
+                            <img src="src/achive.png" alt="achive">
+                            <img src="src/achive.png" alt="achive">
+                        </div>
+                    </div>
+
+
+                    <div class="content__season">
+                        <div class="content__season__choose">
+                            <a class="content__season__choose__button active">
+                                Все сезоны
+                            </a>
+                            <a class="content__season__choose__button">
+                                Сезон 2020/21
+                            </a>
+                        </div>
+
+                        <div class="content__season__info">
+                            <div class="content__season__info__item">
+                                Игры
+                                <span class="points">36</span>
+                            </div>
+                            <div class="content__season__info__item">
+                                Гол
+                                <span class="points">67</span>
+                            </div>
+                            <div class="content__season__info__item">
+                                Пас
+                                <span class="points">136</span>
+                            </div>
+                            <div class="content__season__info__item">
+                                Гол + пас
+                                <span class="points">136</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content__side">
+                        <div class="content__side__share">
+                            <div class="text">
+                                Поделиться
+                            </div>
+                            <div class="images">
+                                <a href="#"><img src="src/icon-fb.svg" alt="fb"></a>
+                                <a href="#"><img src="src/icon-vk.svg" alt="vk"></a>
+                                <a href="#"><img src="src/icon-link.svg" alt="link"></a>
+                            </div>
+                        </div>
+                        <div class="content__side__grid">
+                            <img src="src/X_05.svg" class="grid-1">
+                            <img src="src/X_1.svg" class="grid-2">
+                            <img src="src/X_1.svg" class="grid-3">
+                            <img src="src/X_2.svg" class="grid-4">
+                            <img src="src/X_2.svg" class="grid-5">
+                            <img src="src/X_2.svg" class="grid-6">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="format">
+                    <div class="format__text">
+                        Формат
+                    </div>
+                    <img src="src/arrow_down.svg" alt="">
+                </div>
+
+                <table class="content__table">
+                    <colgroup>
+                        <col style="width: 42%">
+                        <col style="width: 16%">
+                        <col style="width: 10%">
+                        <col style="width: 10%">
+                        <col style="width: 12%">
+                        <col style="width: 10%">
+                    </colgroup>
+
+                    <thead class="content__table__head">
+                        <tr>
+                            <th class="content__table__head__item">Сезон</th>
+                            <th class="content__table__head__item">Кол-во игр</th>
+                            <th class="content__table__head__item">Гол</th>
+                            <th class="content__table__head__item">Пас</th>
+                            <th class="content__table__head__item">Гол + пас</th>
+                            <th class="content__table__head__item">Рейтинг</th>
+                        </tr>
+                    </thead>
+                    <tbody class="content__table__body">
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__row__item">Сезон 2021/2020</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">2</td>
+                            <td class="content__table__body__row__item">1</td>
+                            <td class="content__table__body__row__item">89.40</td>
+                        </tr>
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__row__item">Сезон 2020/2019</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">2</td>
+                            <td class="content__table__body__row__item">1</td>
+                            <td class="content__table__body__row__item">89.40</td>
+                        </tr>
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__row__item">Сезон 2019/2018</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">2</td>
+                            <td class="content__table__body__row__item">1</td>
+                            <td class="content__table__body__row__item">89.40</td>
+                        </tr>
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__row__item">Сезон 2018/2017</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">2</td>
+                            <td class="content__table__body__row__item">1</td>
+                            <td class="content__table__body__row__item">89.40</td>
+                        </tr>
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__row__item">Сезон 2017/2016</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">5</td>
+                            <td class="content__table__body__row__item">2</td>
+                            <td class="content__table__body__row__item">1</td>
+                            <td class="content__table__body__row__item">89.40</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__info">
+                    <div class="footer__content__info__logo">
+                        <img src="src/logo_white.svg" alt="">
+                        <img src="src/logo_text_white.svg" alt="">
+                    </div>
+
+                    <div class="footer__content__info__store">
+                        <a class="footer__content__info__store__item" href="#"><img src="src/google-play.jpg"
+                                alt="Google Play"></a>
+                        <a class="footer__content__info__store__item" href="#"><img src="src/app-store.jpg"
+                                alt="App Store"></a>
+                    </div>
+
+                    <div class="footer__content__info__contacts">
+                        <div class="footer__content__info__contacts__head">
+                            Наши контакты
+                        </div>
+                        <a class="footer__content__info__contacts__link" href="tel:74951090309"><img src="src/phone.svg" alt=""> +7 (495) 109-03-09</a>
+                        <a class="footer__content__info__contacts__link" href="mailto:go@crossball.ru"><img src="src/mail.svg" alt="">go@crossball.ru</a>
+                    </div>
+                </div>
+
+                <div class="footer__content__menu">
+                    <div class="footer__content__menu__head">Разделы</div>
+                    <a href="#" class="footer__content__menu__link">Главная</a>
+                    <a href="#" class="footer__content__menu__link">Расписание</a>
+                    <a href="#" class="footer__content__menu__link">Игровые отчёты</a>
+                    <a href="#" class="footer__content__menu__link">Статистика</a>
+                </div>
+
+                <div class="footer__content__menu">
+                    <div class="footer__content__menu__head">Виды спорта</div>
+                    <a href="#" class="footer__content__menu__link">Футбол</a>
+                    <a href="#" class="footer__content__menu__link">Баскетбол</a>
+                    <a href="#" class="footer__content__menu__link">Волейбол</a>
+                </div>
+
+                <div class="footer__content__menu">
+                    <div class="footer__content__menu__head">Полезное</div>
+                    <a href="#" class="footer__content__menu__link">Как записаться?</a>
+                    <a href="#" class="footer__content__menu__link">Ответы на вопросы</a>
+                    <a href="#" class="footer__content__menu__link">Достижения</a>
+                </div>
+
+                <div class="footer__content__menu">
+                    <div class="footer__content__menu__head">Больше информации</div>
+                    <a href="#" class="footer__content__menu__link">Абонименты</a>
+                    <a href="#" class="footer__content__menu__link">Корп. клиентам</a>
+                    <a href="#" class="footer__content__menu__link">Партнёры</a>
+                </div>
+
+            </div>
+
+            <div class="footer__end">
+                <div>
+                    © Все права защищены
+                </div>
+                <div class="footer__end__social">
+                    <a href="#"><img src="src/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="src/icon-vk.svg" alt="vk"></a>
+                    <a href="#"><img src="src/icon-fb.svg" alt="facebook"></a>
+                    <a href="#"><img src="src/youtube.svg" alt="youtube"></a>
+                    <a href="#"><img src="src/telegram.svg" alt="telegram"></a>
+                    <a href="#"><img src="src/WA.svg" alt="wa"></a>
+                </div>
+                <div class="footer__end__github">
+                    <a class="footer__end__github__link" href="https://github.com/stufade">Stufade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/side-bar.js"></script>
+    <script src="js/season-toggle.js"></script>
+</body>
+
+</html>

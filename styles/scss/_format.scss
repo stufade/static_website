@@ -1,0 +1,14 @@
+@import 'variables/grey-color';
+
+.wrapper .format {
+    width: 170px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: $grey-color;
+    font-size: 15px;
+    cursor: pointer;
+}
